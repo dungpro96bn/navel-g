@@ -1,0 +1,406 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+#footer {
+    &.footer {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 52px 0 15px;
+        background: $footerBgColor;
+        color: $footerTextColor;
+        z-index: 2;
+
+        &:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 52px;
+            background: #212121;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        @include xs{
+            padding-top: 60px;
+            padding-bottom: 30px;
+
+            &:after{
+                height: 130px;
+            }
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .pageTop {
+        display: none;
+        position: absolute;
+        z-index: 9998;
+        top: -32px;
+        right: calc((100% - 1200px) / 2 - 32px);
+
+        @include ml {
+            right: 20px;
+        }
+
+        @include xs{
+            top: -20px;
+            right: 24px;
+        }
+    }
+
+    .pageTopAnchor {
+
+        .ttl{
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            font-weight: bold;
+            color: #fff;
+
+            @include xs{
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+
+        &:hover{
+            .icon-scrollTop{
+                background: #0D0D0D;
+                border-color: #fff;
+            }
+
+            rect{
+                fill: #fff;
+            }
+        }
+
+        .icon-scrollTop{
+            width: 64px;
+            height: 64px;
+            background: #fff;
+            border: 2px solid #0D0D0D;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s;
+            margin-bottom: 12px;
+
+            @include xs{
+                width: 40px;
+                height: 40px;
+                margin-bottom: 8px;
+
+                svg{
+                    width: 8px;
+                    height: auto;
+                }
+            }
+        }
+
+        @include xs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    #searchJobsBtn {
+        display: none;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 9997;
+        background-color: rgba(#8C8C8C, .6);
+        width: 100%;
+
+        .searchJobsBtn-bnr {
+            padding: 12px;
+            text-align: center;
+
+            a {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 5px 10px;
+                background: $searchBoxFollowBtnBgColor;
+
+                .en,
+                .ja {
+                    display: block;
+                    color: $searchBoxFollowBtnTextColor;
+                    font-weight: 500;
+                    line-height: 1;
+                }
+
+                .en {
+                    margin-bottom: 5px;
+                    font-size: rem(24);
+                }
+
+                .ja {
+                    font-size: rem(13);
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    .footerLayout {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+        width: calc(100% - 24px);
+        max-width: 1040px;
+        margin: 0 auto;
+        @include minWidthXs {
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+
+        @include xs{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+    .footerCorpInfo {
+        display: flex;
+        flex-direction: column;
+        @include minWidthXs {
+            width: 454px;
+        }
+
+        img { //ロゴのスタイル
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            line-height: 1;
+            object-fit: contain;
+            @include xs {
+                width: 100%;
+                max-width: 311px;
+            }
+        }
+
+        @include xs{
+            margin-bottom: 92px;
+        }
+    }
+
+    .footerTitle {
+        margin-bottom: 11px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            //content: "採用サイト";
+            color: $white;
+            padding-left: 0.5rem;
+            transform: translateY(-50%);
+            @include minWidthXs {
+                font-size: rem(16);
+            }
+        }
+
+        @include xs{
+            margin-bottom: 40px;
+        }
+    }
+
+    .footerZipAddress {
+        display: flex;
+
+        p:nth-child(1) {
+            padding-right: 2px;
+        }
+    }
+
+    .copyright {
+        margin-top: 98px;
+        @include xs {
+            position: absolute;
+            padding-top: 0;
+            margin-top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+
+    .blankIconImg {
+        display: inline-block;
+        padding: 5px 0 0 10px;
+        color: $spHeaderMenuTextColor;
+        font-size: rem(12);
+        line-height: 1;
+        vertical-align: top;
+    }
+
+    .blankIcon { // todo アイコンつけたい場合とつけたくない場合を制御できるようにすること
+        display: flex;
+
+        &::after {
+            height: 13px;
+            width: 15px;
+            font-family: "Font Awesome 5 Free";
+            content: '\f35d';
+            font-weight: 600;
+            font-size: .81rem;
+        }
+    }
+
+    .footerRemoteNav,
+    .copyright {
+        min-height: 0;
+        @include minWidthXs {
+        }
+    }
+
+    .footerRemoteNav {
+        padding-bottom: 22px;
+        @include minWidthXs {
+            padding-bottom: 0;
+            align-self: flex-end;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 22px;
+        }
+        @include xs {
+
+
+        }
+    }
+
+    .footerRemoteNavList {
+        display: flex;
+        flex-wrap: wrap;
+        @include minWidthXs {
+            justify-content: flex-end;
+            max-width: 380px;
+        }
+
+        @include xs{
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+    }
+
+    .footerRemoteNavItem {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: calc((100% - 20px) / 2);
+        //margin-right: 20px;
+        text-align: center;
+        @include xs {
+            justify-content: flex-start;
+            //padding-left: 2em;
+            margin-right: 0;
+            &:not(:nth-last-of-type(-n+2)) {
+                display: none;
+            }
+        }
+        @include minWidthXs {
+            flex-grow: 0;
+            flex-shrink: 1;
+            margin-bottom: 1.25rem;
+            text-align: left;
+        }
+
+        &:nth-of-type(even) {
+            margin-right: 0;
+            @include minWidthXs {
+                //margin: 0 0 1em 60px;
+            }
+        }
+
+        &:first-of-type {
+            @include minWidthXs {
+            }
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:nth-of-type(n+3) {
+            //margin-top: 20px;
+            @include minWidthXs {
+                margin-top: 0;
+            }
+        }
+
+        &:nth-last-of-type(3) {
+            @include minWidthXs {
+                flex-basis: 100%;
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+                padding-left: calc(((100% - 20px) / 2) + 20px);
+            }
+        }
+
+        .letter {
+            font-size: rem(14);
+            line-height: 1.5;
+
+            &::after {
+                position: static;
+                font-size: rem(14);
+                margin-left: 10px;
+            }
+        }
+
+        &.remoteNav {
+            @include minWidthXs {
+                flex-basis: calc(50% + 45px);
+                margin-top: 102px;
+                margin-bottom: 0;
+                &:last-of-type {
+                    flex-basis: calc(50% - 82px);
+                }
+            }
+        }
+
+        @include xs {
+            margin-right: 20px !important;
+            width: auto;
+            flex-basis: unset;
+            display: inline-block;
+            flex-grow: unset;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        @include minWidthXs {
+            text-align: left;
+        }
+
+        small {
+            font-style: normal;
+            font-size: rem(14);
+            line-height: 1.5;
+
+            @include xs{
+                font-size: 12px;
+            }
+        }
+    }
+}

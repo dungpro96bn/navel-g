@@ -1,0 +1,17 @@
+//共通設定読み込み
+@import "resources/sass/pages/common";
+#content {
+  //レイアウト読み込み
+  @import "resources/sass/layouts/layoutContent";
+
+  //ページ内要素
+
+}
+
+.b-g{
+    font-family: "brandon-grotesque", sans-serif;
+}
+
+.c-l-v2{
+    font-family: "corporate-logo-ver2", sans-serif;
+}
