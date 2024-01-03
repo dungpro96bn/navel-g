@@ -506,14 +506,14 @@
             width: 48.2%;
             max-width: 925px;
 
-            img{
-                transform: translateY(-30px);
-                position: relative;
-                -webkit-animation-name: scroll;
-                -webkit-animation-duration: 2000ms;
-                -webkit-animation-iteration-count: infinite;
-                -webkit-animation-timing-function: linear;
-            }
+            //img{
+            //    transform: translateY(-30px);
+            //    position: relative;
+            //    -webkit-animation-name: scroll;
+            //    -webkit-animation-duration: 2000ms;
+            //    -webkit-animation-iteration-count: infinite;
+            //    -webkit-animation-timing-function: linear;
+            //}
 
             @include xs{
                 top: 39.5%;
@@ -1450,6 +1450,7 @@
             }
 
             .advantagesItem{
+
                 .image{
                     display: block;
                     border-radius: 20px;
@@ -1494,6 +1495,16 @@
                     color: #242424;
                     font-weight: 400;
                     letter-spacing: 1px;
+                }
+
+                &:nth-child(1){
+                    .txt{
+                        padding-right: 20px;
+
+                        @include xs{
+                            padding-right: 0;
+                        }
+                    }
                 }
 
                 @include xs{
@@ -1718,11 +1729,15 @@
                     top: -85px;
                     left: 52.2%;
                     transform: translateX(-50%);
+
+                    @include xs{
+                        top: -50px;
+                    }
                 }
 
                 .workingCheck-box{
                     .title{
-                        margin-bottom: 24px;
+                        //margin-bottom: 24px;
                     }
                 }
             }

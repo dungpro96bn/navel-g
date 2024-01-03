@@ -20,7 +20,7 @@ nav { //pagerのNav
     }
     em {
       font-size: $fontSizeXxLarge;
-      color: $searchTextColor;
+      color: #1B7CC4;
       margin: 0 5px 0 0;
       line-height: $lineHeightLowBase;
     }
@@ -48,7 +48,7 @@ nav { //pagerのNav
         &.first {
           border-left: 1px solid #D9D9D9;
           span {
-            background: none repeat scroll 0 0 $searchTextColor;
+            background: none repeat scroll 0 0 #1B7CC4;
             width: 100%;
             color: $bgMainTextColor;
             display: block;

@@ -14,15 +14,20 @@
     <div id="{{$path}}Thanks">
         <div id="wrapJobDetail">
             <div id="{{$path}}Area">
-                <header>
-                    <div class="entry-title">
-                        <div class="en">ENTRY</div>
-                        <div class="ja">WEBスタッフ登録</div>
+
+                <div class="mainBanner mainContact">
+                    <div class="inner">
+                        <div class="bannerContent">
+                            <div class="headingBanner">
+                                <h1 class="heading-main">
+                                    <span class="ttl-ja c-l-v2">ご登録フォーム</span>
+                                    <span class="ttl-en b-g">CONTACT</span>
+                                </h1>
+                            </div>
+                        </div>
                     </div>
-                    <div class="entry-introduction">
-                        お気軽にご登録ください！
-                    </div>
-                </header>
+                </div>
+
                 <div class="inner">
                     <div class="step_guide">
                         WEBスタッフ登録 送信完了

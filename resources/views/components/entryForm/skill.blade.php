@@ -252,7 +252,7 @@
 
             @case('qualification')
             <tr>
-                <th>資格@if($list['required'])<i class="required">*</i>@endif</th>
+                <th>資格<i class="required">*</i></th>
                 <td>
                 @foreach($list As $fieldName => $rules)
                 @switch($fieldName)

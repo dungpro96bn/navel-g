@@ -31,11 +31,12 @@ if(isset($frontendSettings['footer']['corpInfo']['type']) || isset($frontendSett
 }
 @endphp
 
-<div id="contactBanner">
-    <x-contentBox.contactBanner />
-</div>
+
 
 <div id="cmnFooter">
+    <div id="contactBanner">
+        <x-contentBox.contactBanner />
+    </div>
     <footer id="footer" class="footer">
         <div id="pageTop" class="pageTop">
             <a href="#" class="pageTopAnchor b-g">

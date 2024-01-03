@@ -419,13 +419,6 @@
       left: -367px;
       width: 48.2%;
       max-width: 925px; }
-      .business-working .business-working-bg.bg01 img {
-        transform: translateY(-30px);
-        position: relative;
-        -webkit-animation-name: scroll;
-        -webkit-animation-duration: 2000ms;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear; }
       @media (max-width: 767px) {
         .business-working .business-working-bg.bg01 {
           top: 39.5%;
@@ -1142,6 +1135,11 @@
       color: #242424;
       font-weight: 400;
       letter-spacing: 1px; }
+    .beginner-guide .advantages-seasonal-employees .advantagesList .advantagesItem:nth-child(1) .txt {
+      padding-right: 20px; }
+      @media (max-width: 767px) {
+        .beginner-guide .advantages-seasonal-employees .advantagesList .advantagesItem:nth-child(1) .txt {
+          padding-right: 0; } }
     @media (max-width: 767px) {
       .beginner-guide .advantages-seasonal-employees .advantagesList .advantagesItem {
         padding: 0 13px; }
@@ -1301,8 +1299,9 @@
         top: -85px;
         left: 52.2%;
         transform: translateX(-50%); }
-      .beginner-guide .workingCheck-info .workingCheck-item:nth-child(2) .workingCheck-box .title {
-        margin-bottom: 24px; }
+        @media (max-width: 767px) {
+          .beginner-guide .workingCheck-info .workingCheck-item:nth-child(2) .icon {
+            top: -50px; } }
       .beginner-guide .workingCheck-info .workingCheck-item .workingCheck-box {
         background: #fff;
         border-radius: 40px;

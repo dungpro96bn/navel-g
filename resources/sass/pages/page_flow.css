@@ -625,8 +625,8 @@
       position: relative;
       cursor: pointer; }
       .faqContent .faqList .faqItem .faq-question.active .icon-toggle:after {
-        transform: rotate(0deg);
-        opacity: 1; }
+        transform: rotate(90deg);
+        opacity: 0; }
       @media (max-width: 767px) {
         .faqContent .faqList .faqItem .faq-question {
           padding: 16px 48px 16px 16px;
@@ -659,8 +659,8 @@
           width: 4px;
           border-radius: 1px;
           background: #fff;
-          transform: rotate(90deg);
-          opacity: 0;
+          transform: rotate(0deg);
+          opacity: 1;
           transition: .3s; }
         @media (max-width: 767px) {
           .faqContent .faqList .faqItem .faq-question .icon-toggle {

@@ -110,7 +110,7 @@
                     <div class="contact-description">
                         <div class="inner">
                             <p class="text">すぐに働くわけじゃないけど、登録だけ…という方も大歓迎です！<br/>弊社スタッフから折り返しご連絡させていただきます。</p>
-                            <p class="subTitle">ご面談時即日でお仕事決定も！お急ぎの場合は、まずはお電話ください。<span class="tel">0120-622-468</span></p>
+                            <p class="subTitle"><span class="txt">ご面談時即日でお仕事決定も！お急ぎの場合は、まずはお電話ください。</span><span class="tel">0120-622-468</span></p>
                         </div>
                     </div>
 

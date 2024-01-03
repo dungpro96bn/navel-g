@@ -40,7 +40,7 @@
                 <p class="text">詳しくはこちら！</p>
             </div>
             <div class="btn-link">
-                <a href="#">ご登録の流れ&よくある質問</a>
+                <a href="flow/">ご登録の流れ&よくある質問</a>
             </div>
         </div>
 

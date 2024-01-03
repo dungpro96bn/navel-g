@@ -5,8 +5,17 @@
         width: 100%;
         margin-bottom: 80px;
 
+        @include xs{
+            margin-bottom: 40px;
+        }
+
+
         &.free-entry-field{
             margin-bottom: 48px;
+
+            @include xs{
+                margin-bottom: 40px;
+            }
         }
 
         > div {
@@ -51,6 +60,10 @@
         display: block;
         margin-top: 26px;
         letter-spacing: 1px;
+
+        @include xs{
+            margin-top: 11px;
+        }
     }
 
     label {
@@ -203,7 +216,7 @@
         border: 1px solid #d9d9d9;
         padding: 5px;
         @include xs { //select,input 共通xs
-            background: $formInputBgColorBase; //フォームのSelect,Input背景色
+             //フォームのSelect,Input背景色
             height: 34px;
             border-radius: 0;
             box-shadow: none;
@@ -324,8 +337,8 @@
         background-repeat: no-repeat;
         background-position: center right;
         padding: 5px 32px 5px 5px;
-        background-size: 25px 36px;
         color: #A7A7A7;
+        background-size: 12px 12px;
         @include xs {
             padding: 5px 35px 5px 5px;
         }
@@ -571,7 +584,7 @@
 
             .fields {
                 display: inline-block;
-                margin: 0 !important;
+                //margin: 0 !important;
 
                 &.name, &.address {
                     span.error {
@@ -818,6 +831,10 @@
                         border-radius: 4px;
                         background: #fff;
                         border: 1px solid #0D0D0D;
+
+                        @include xs{
+                            top: 20px;
+                        }
                     }
 
                     &::after {
@@ -826,19 +843,23 @@
                         position: absolute;
                         top: -4px;
                         bottom: 0;
-                        left: -34px;
+                        left: -35px;
                         width: 14px;
                         height: 8px;
                         margin: auto;
                         transform: rotate(-45deg) scale(0.5);
-                        border-bottom: 3px solid #0D0D0D;
-                        border-left: 3px solid #0D0D0D;
+                        border-bottom: 3px solid #fff;
+                        border-left: 3px solid #fff;
                         opacity: 0;
+
+                        @include xs{
+                            top: 15px;
+                        }
                     }
 
                     &.is-checked {
                         &::before {
-                            //background: #177ed1 !important;
+                            background: #0D0D0D !important;
                         }
 
                         &::after {

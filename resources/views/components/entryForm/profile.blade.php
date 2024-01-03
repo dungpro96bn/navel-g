@@ -179,7 +179,7 @@ if($fEntApplyMasters->cityMst){
                                 <div class="fields address">
                                     <x-molecules.input type="text" id="zipCode" name="zipCode" maxlength="7" placeholder="例：1234567" :value="old('zipCode', $fEntUserApplyInfo->zipCd ?? '')" class="w-40" />
                                     <x-molecules.validation-errors :errors="$errors" for="zipCode" />
-                                    <i class="indicatorZip spLayout">住所検索</i>
+                                    <i class="indicatorZip spLayout">郵便番号から住所を検索</i>
                                 </div>
                             </dd>
                             <div class="textBox">
@@ -271,7 +271,7 @@ if($fEntApplyMasters->cityMst){
 
             @case('mailAddress')
             <tr class="{{($groupName)}}">
-                <th>メールアドレス@if($list['required'])<i class="required">*</i>@endif</th>
+                <th>メールアドレス</th>
                 <td>
                 @foreach($list As $fieldName => $rules)
 
@@ -292,8 +292,7 @@ if($fEntApplyMasters->cityMst){
                 @endforeach
 
                     <div class="notice">
-                        携帯電話可。迷惑メール対策等で、 ドメイン指定受信されている場合は、弊社から<br/>
-                        のメールが正しく届かない場合がございます。 弊社メールドメイン 「navel-g.co.jp」を受信できるよう設定してください。
+                        携帯電話可。迷惑メール対策等で、 ドメイン指定受信されている場合は、弊社から<br class="pc-br"/>のメールが正しく届かない場合がございます。 弊社メールドメイン 「navel-g.co.jp」を受信できるよう設定してください。
                     </div>
 
                 </td>

@@ -777,8 +777,8 @@
                 &.active{
                     .icon-toggle{
                         &:after{
-                            transform: rotate(0deg);
-                            opacity: 1;
+                            transform: rotate(90deg);
+                            opacity: 0;
                         }
                     }
                 }
@@ -819,8 +819,8 @@
                         width: 4px;
                         border-radius: 1px;
                         background: #fff;
-                        transform: rotate(90deg);
-                        opacity: 0;
+                        transform: rotate(0deg);
+                        opacity: 1;
                         transition: .3s;
                     }
 

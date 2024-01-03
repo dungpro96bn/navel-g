@@ -121,7 +121,7 @@
                 <p class="text"><img class="icon-left" src="{{asset('images/contentBox/icon_ttl.svg')}}" alt="">初めての方はまずはこちらから<br class="sp-br"/>ご覧ください！！</p>
             </div>
             <div class="btn-link">
-                <a href="#">事業紹介</a>
+                <a href="business/">事業紹介</a>
             </div>
         </div>
 

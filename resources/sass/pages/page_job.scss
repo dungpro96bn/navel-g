@@ -44,8 +44,8 @@
     left: 20px;
     width: 21px;
     height: 12px;
-    background: url(#{$imgDir}arrow/arrow_down_pc.png) no-repeat left center / contain;
-    transform: translateY(-50%) rotate(90deg) scale(.75);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='12' viewBox='0 0 6 12'%3E%3Cpath id='Icon_ionic-ios-arrow-down' data-name='Icon ionic-ios-arrow-down' d='M12.19,15.438l4.537-3.971a.943.943,0,0,1,1.211,0,.691.691,0,0,1,0,1.062l-5.141,4.5a.947.947,0,0,1-1.183.022L6.438,12.532a.689.689,0,0,1,0-1.062.943.943,0,0,1,1.211,0Z' transform='translate(17.246 -6.188) rotate(90)'/%3E%3C/svg%3E%0A");
+    transform: translateY(-50%);
     z-index: 1;
   }
   &:hover {
@@ -335,7 +335,7 @@
               &.indicator1 { //正社員
                 padding: 6px 10px 5px;
                 border-radius: 0;
-                color: white;
+                color: #0D0D0D;
                 background-color: $seisyainColor;
               }
               &.indicator2 { //契約社員
@@ -673,7 +673,7 @@
                   }
                   .goApply {
                     @extend %btnGrayBase;
-                    background: $goApplyBtnsBgColor;
+                    background: #1B7CC4;
                     line-height: 1.5;
                     transition: all .3s;
                     color: $goApplyBtnsTextColor;

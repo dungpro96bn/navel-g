@@ -80,7 +80,7 @@ section.jobSummary {
         }
         i {
           background: #666666; //アイコンインジケーターの背景色
-          color: white;
+          color: #0D0D0D;
           padding: 6px 10px 5px 10px;
           border-radius: 0;
           line-height: 2;
@@ -244,7 +244,7 @@ section.jobSummary {
       .goJob {
         @extend %btnGrayBase;
         display: block;
-        background: $goDetailBtnBgColor;
+        background: #1B7CC4;
         color: $goDetailBtnTextColor;
         cursor: pointer;
         transition: all .3s;

@@ -8,7 +8,7 @@
 .mainBanner{
     &.mainContact{
         background-color: #E5E5E5;
-        background-image: url("/public/images/contentBox/flow/flow_mainImg_pc.png");
+        background-image: url("/public/images/contentBox/entry/contact_mainImg_pc.png");
         background-size: calc(100% + 54px);
         background-position: -34px -87px;
 
@@ -33,8 +33,8 @@
         .bannerContent{
 
             @include xs{
-                padding-top: 68px;
-                padding-bottom: 77px;
+                padding-top: 84px;
+                padding-bottom: 95px;
             }
 
             .headingBanner{
@@ -42,6 +42,16 @@
                     content: "contact";
                     width: 100%;
                     text-align: center;
+                }
+            }
+
+            .heading-main{
+                .ttl-en{
+                    padding-right: 29px;
+
+                    @include xs{
+                        padding-right: 0;
+                    }
                 }
             }
 
@@ -62,9 +72,24 @@
         padding-top: 42px;
         padding-bottom: 98px;
 
+        @include xs{
+            padding-top: 30px;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 39px;
+        }
+
         .subTitle{
             padding-right: 10px;
             letter-spacing: 1.5px;
+
+            @include xs{
+                padding-right: 0;
+
+                .txt{
+                    display: none;
+                }
+            }
 
             .tel{
                 display: inline-block;
@@ -93,9 +118,44 @@
                     width: 100%;
                     height: 15px;
                     background: #FFF07B;
-                    bottom: 0;
+                    bottom: 4px;
                     right: 0;
                     z-index: -1;
+                }
+
+                @include xs{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 60px;
+                    border: 2px solid #CECECE;
+                    border-radius: 60px;
+                    width: 248px;
+                    margin: 24px auto 0;
+                    padding-left: 0;
+                    font-size: 20px;
+                    line-height: 30px;
+                    padding-right: 2px;
+                    letter-spacing: 0.2px;
+                    padding-bottom: 5px;
+
+                    &:before{
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        margin-right: 8px;
+                        width: 14px;
+                        height: 14px;
+                    }
+
+                    &:after{
+                        height: 8px;
+                        width: 150px;
+                        right: unset;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 20px;
+                    }
                 }
             }
         }
@@ -116,6 +176,13 @@
             position: relative;
             margin-bottom: 0;
             letter-spacing: 2px;
+
+            @include xs{
+                height: 60px;
+                font-size: 20px;
+                line-height: 30px;
+                padding-left: 24px;
+            }
 
             &:before{
                 display: none;
@@ -163,6 +230,22 @@
                     opacity: 0;
                     transition: 0.3s;
                 }
+
+                @include xs{
+                    width: 20px;
+                    height: 20px;
+                    right: 20px;
+
+                    &:before{
+                        width: 7.5px;
+                        height: 2.5px;
+                    }
+
+                    &:after{
+                        height: 7.5px;
+                        width: 2.5px;
+                    }
+                }
             }
 
             &.text-yellow{
@@ -208,6 +291,12 @@
                     padding: 133px 64px 45px;
                     border-radius: 40px;
                     margin-top: -69px;
+
+                    @include xs{
+                        padding: 62px 16px 55px;
+                        border-radius: 20px;
+                        margin-top: -30px;
+                    }
                 }
 
                 table {
@@ -215,6 +304,12 @@
                     padding: 133px 64px 45px;
                     border-radius: 40px;
                     margin-top: -69px;
+
+                    @include xs{
+                        padding: 62px 16px 55px;
+                        border-radius: 20px;
+                        margin-top: -30px;
+                    }
 
                     tr {
                         background: #F2F2F2 !important;
@@ -230,10 +325,122 @@
                             padding-bottom: 0;
                         }
 
+                        td{
+                            width: calc(100% - 228px);
+                            padding-left: 80px;
+                            column-gap: 57px;
+
+                            @include xs{
+                                width: 100%;
+                                padding: 0;
+                                column-gap: 0;
+                                flex-wrap: wrap;
+                            }
+
+                            .fields{
+                                width: 50%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                padding: 0;
+
+                                label{
+                                    width: 53px;
+                                    padding: 0;
+                                    min-width: auto;
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                    color: #242424;
+                                    font-weight: bold;
+
+                                    &.text-align{
+                                        text-align: center;
+                                    }
+                                }
+
+                                input{
+                                    width: calc(100% - 53px) !important;
+
+                                    &#mailAddress{
+                                        width: 100% !important;
+                                    }
+                                }
+
+                                @include xs{
+                                    width: 100%;
+                                    margin-right: 0 !important;
+                                    margin-bottom: 16px;
+
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+
+                                    label{
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        width: 48px;
+                                        text-align: left;
+
+                                        &.text-align{
+                                            text-align: left;
+                                        }
+                                    }
+
+                                    input{
+                                        width: calc(100% - 48px) !important;
+
+                                        &#mailAddress{
+                                            width: 100% !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            select{
+                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.314' height='11.314' viewBox='0 0 11.314 11.314'%3E%3Cpath id='Union_34' data-name='Union 34' d='M-1411.3-33a1,1,0,0,1-1-1v-4.6h-4.6a1,1,0,0,1-1-1V-40a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v6a1,1,0,0,1-1,1Z' transform='translate(-1020.284 979.272) rotate(135)' fill='%23242424'/%3E%3C/svg%3E%0A");
+                                background-size: 12px 12px;
+
+                            }
+
+                            label{
+                                font-size: 18px;
+                                line-height: 32px;
+                                color: #242424;
+                                font-weight: bold;
+                                letter-spacing: 1px;
+
+                                @include xs{
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                            }
+
+                        }
+
                         &.gender{
                             td{
                                 select{
                                     width: 300px !important;
+
+                                    @include xs{
+                                        max-width: 200px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.nameRuby{
+                            @include xs{
+                                td{
+                                    .fields{
+                                        label{
+                                            width: 65px;
+                                        }
+
+                                        input{
+                                            width: calc(100% - 65px) !important;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -243,10 +450,18 @@
                                 dt{
                                     width: 90px;
                                     min-width: auto;
+
+                                    @include xs{
+                                        width: 82px;
+                                    }
                                 }
 
                                 dd{
                                     width: 300px;
+
+                                    @include xs{
+                                        width: calc(100% - 82px);
+                                    }
 
                                     select, input{
                                         width: 100% !important;
@@ -260,10 +475,20 @@
                                 label{
                                     padding-top: 14px;
                                     min-width: 100%;
+
+                                    @include xs{
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        padding-top: 8px;
+                                    }
                                 }
 
                                 .multi-item{
                                     margin-bottom: 25px;
+
+                                    @include xs{
+                                        margin-bottom: 15px;
+                                    }
 
                                     &:last-child{
                                         margin-bottom: 0;
@@ -279,6 +504,10 @@
                             .textBox{
                                 width: calc(100% - 390px);
                                 padding-left: 27px;
+
+                                @include xs{
+                                    display: none;
+                                }
 
                                 i{
                                     background: #888888;
@@ -302,6 +531,10 @@
                                 input{
                                     width: 100% !important;
                                     max-width: 300px;
+
+                                    @include xs{
+                                        max-width: 100%;
+                                    }
                                 }
                             }
                         }
@@ -333,8 +566,23 @@
                                     left: unset;
                                     right: 0;
                                     top: 14px;
+
+                                    @include xs{
+                                        top: -2px;
+                                    }
                                 }
                             }
+
+                            @include xs{
+                                width: 100%;
+                                font-size: 18px;
+                                line-height: 30px;
+                                padding: 0;
+                                margin: 0 0 23px;
+                                display: flex;
+                                align-items: center;
+                            }
+
                         }
 
                         &.birthday{
@@ -354,6 +602,24 @@
                                         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.314' height='11.314' viewBox='0 0 11.314 11.314'%3E%3Cpath id='Union_34' data-name='Union 34' d='M-1411.3-33a1,1,0,0,1-1-1v-4.6h-4.6a1,1,0,0,1-1-1V-40a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v6a1,1,0,0,1-1,1Z' transform='translate(-1020.284 979.272) rotate(135)' fill='%23242424'/%3E%3C/svg%3E%0A");
                                         background-size: 12px 12px;
                                     }
+
+                                    @include xs{
+                                        width: 28.75%;
+                                        margin-bottom: 0;
+
+                                        &:nth-child(1){
+                                            width: 42.5%;
+                                        }
+
+                                        label{
+                                            width: 28px;
+                                            text-align: center !important;
+                                        }
+
+                                        select{
+                                            width: calc(100% - 28px) !important;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -364,12 +630,26 @@
                                     margin-bottom: 24px;
                                     column-gap: 40px;
 
+                                    @include xs{
+                                        column-gap: 0;
+                                        flex-wrap: wrap;
+                                        margin-bottom: 16px;
+                                    }
+
                                     .fields{
                                         max-width: 300px;
+                                        @include xs{
+                                            max-width: 100%;
+                                        }
                                     }
 
                                     &:last-child{
                                         margin-bottom: 0;
+                                    }
+
+                                    select{
+                                        margin-bottom: 0;
+                                        width: 100%;
                                     }
                                 }
                             }
@@ -387,6 +667,11 @@
 
                                 select{
                                     max-width: 300px;
+
+                                    @include xs{
+                                        max-width: 100%;
+                                        width: 100%;
+                                    }
                                 }
                             }
                         }
@@ -394,7 +679,7 @@
                         &.management-experience{
                             td{
                                 align-items: center;
-                                display: flex;
+                                display: flex !important;
                                 flex-wrap: wrap;
                                 justify-content: flex-start;
                                 column-gap: 0;
@@ -405,6 +690,25 @@
                                     width: 30px !important;
                                     height: 30px;
                                     margin: 0;
+                                    opacity: 1;
+
+                                    @include xs{
+                                        width: 24px !important;
+                                        height: 24px;
+                                    }
+                                }
+
+                                @include xs{
+                                    label{
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        background: transparent;
+                                        color: #242424;
+                                        border: 0;
+                                        padding: 0;
+                                        width: 50px;
+                                        margin-right: 40px;
+                                    }
                                 }
                             }
                         }
@@ -448,6 +752,10 @@
 
                                     .multi-item{
                                         column-gap: 20px;
+
+                                        @include xs{
+                                            column-gap: 0;
+                                        }
                                     }
 
                                     .fields{
@@ -468,6 +776,70 @@
                                         max-width: 300px;
                                     }
                                 }
+
+                                @include xs{
+
+                                    .item-title{
+                                        width: 82px;
+                                        display: flex;
+                                        align-items: center;
+
+                                        label{
+                                            padding: 0;
+                                            text-align: left;
+                                        }
+                                    }
+
+                                    .itemInfo{
+                                        width: calc(100% - 82px);
+
+                                    }
+
+
+                                    &:nth-child(1){
+                                        .item-title{
+                                            width: 65px;
+                                        }
+
+                                        .itemInfo{
+                                            width: calc(100% - 65px);
+                                        }
+                                    }
+
+                                    &:nth-child(2),
+                                    &:nth-child(3){
+                                        .itemInfo{
+                                            .fields:nth-child(1){
+                                                width: 60%;
+                                                margin-bottom: 0;
+                                            }
+                                            .fields:nth-child(2){
+                                                width: 40%;
+                                            }
+
+                                            label{
+                                                width: 30px;
+                                            }
+
+                                            select{
+                                                width: calc(100% - 30px) !important;
+                                            }
+                                        }
+                                    }
+
+                                    &:last-child{
+                                        .item-title{
+                                            width: 100%;
+                                            margin-bottom: 16px;
+                                        }
+
+                                        .itemInfo{
+                                            width: 100%;
+                                        }
+                                    }
+
+                                }
+
                             }
 
                             .note-textarea{
@@ -483,57 +855,7 @@
 
 
 
-                        td{
-                            width: calc(100% - 228px);
-                            padding-left: 80px;
-                            column-gap: 57px;
 
-                            .fields{
-                                width: 50%;
-                                display: flex;
-                                flex-wrap: wrap;
-                                align-items: center;
-                                padding: 0;
-
-                                label{
-                                    width: 53px;
-                                    padding: 0;
-                                    min-width: auto;
-                                    font-size: 18px;
-                                    line-height: 32px;
-                                    color: #242424;
-                                    font-weight: bold;
-
-                                    &.text-align{
-                                        text-align: center;
-                                    }
-                                }
-
-                                input{
-                                    width: calc(100% - 53px) !important;
-
-                                    &#mailAddress{
-                                        width: 100% !important;
-                                    }
-                                }
-                            }
-
-                            select{
-                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.314' height='11.314' viewBox='0 0 11.314 11.314'%3E%3Cpath id='Union_34' data-name='Union 34' d='M-1411.3-33a1,1,0,0,1-1-1v-4.6h-4.6a1,1,0,0,1-1-1V-40a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v6a1,1,0,0,1-1,1Z' transform='translate(-1020.284 979.272) rotate(135)' fill='%23242424'/%3E%3C/svg%3E%0A");
-                                background-size: 12px 12px;
-
-                            }
-
-                            label{
-                                font-size: 18px;
-                                line-height: 32px;
-                                color: #242424;
-                                font-weight: bold;
-                                letter-spacing: 1px;
-                            }
-
-
-                        }
                     }
 
                     &.carrier-sheet{
@@ -547,4 +869,14 @@
 
 }
 
+
+
+#entryConfirm{
+    .mainBanner{
+        .inner{
+            background: transparent;
+            padding-top: 0;
+        }
+    }
+}
 

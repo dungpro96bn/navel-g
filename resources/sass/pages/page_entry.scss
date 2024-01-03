@@ -90,9 +90,6 @@
 
     .inner {
         width: 100%;
-        @include xs {
-            padding-top: 20px;
-        }
 
         .mod_jobDetailJob {
             @include xs {
@@ -111,7 +108,7 @@
 
             > section {
                 @include xs {
-                    padding: 0 12px;
+                    //padding: 0 12px;
                 }
             }
 
@@ -364,16 +361,25 @@
                 }
 
                 .indicatorZip {
-                    color: $white;
-                    background-color: $accentColor;
-
                     span {
                         display: none;
                     }
 
-                    @include minWidthXs {
-                        margin-top: 0.9rem;
-                        margin-left: 100px;
+                    @include xs {
+                        background: #888888;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 44px;
+                        width: 100%;
+                        max-width: 195px;
+                        border-radius: 4px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: bold;
+                        margin: 10px 0 0;
+                        color: #fff;
+                        letter-spacing: 1px;
                     }
                 }
 
@@ -385,6 +391,11 @@
                     padding-top: 30px;
                     letter-spacing: 1px;
                     padding-right: 40px;
+
+                    @include xs{
+                        line-height: 24px;
+                        padding: 8px 0 0;
+                    }
                 }
 
             }
@@ -399,7 +410,7 @@
                     transform: unset;
                 }
                 @include xs {
-                    padding: 30px 0;
+                    padding: 0px 0 80px;
                 }
 
                 .rule_kojin_field {
@@ -428,6 +439,21 @@
                         padding-left: 26px !important;
                         margin-right: 0 !important;
                     }
+
+                    @include xs{
+                        padding: 0;
+                        border-radius: 20px;
+                        height: 87px;
+                        margin-bottom: 48px;
+
+                        label{
+                            padding: 0;
+                        }
+
+                        .anc_kojin_text{
+                            padding-left: 19px !important;
+                        }
+                    }
                 }
 
                 button.confirmApply {
@@ -446,6 +472,11 @@
                         background: #fff;
                         color: #0D0D0D;
                         opacity: 1 !important;
+                    }
+
+                    @include xs{
+                        height: 60px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -498,10 +529,12 @@
                     border: 2px solid #E52D2D;
                     font-weight: bold;
                     @include xs {
-                        position: relative;
-                        display: inline;
-                        top: 0;
-                        left: 1rem;
+                        font-size: 16px;
+                        position: static;
+                        display: inline-block;
+                        height: 29px;
+                        width: 57px;
+                        margin-left: 7px;
                     }
                 }
             }

@@ -65,7 +65,7 @@
   ============================*/
 .mainBanner.mainContact {
   background-color: #E5E5E5;
-  background-image: url("/public/images/contentBox/flow/flow_mainImg_pc.png");
+  background-image: url("/public/images/contentBox/entry/contact_mainImg_pc.png");
   background-size: calc(100% + 54px);
   background-position: -34px -87px; }
   @media (max-width: 767px) {
@@ -82,12 +82,17 @@
         right: -21px; } }
   @media (max-width: 767px) {
     .mainBanner.mainContact .bannerContent {
-      padding-top: 68px;
-      padding-bottom: 77px; } }
+      padding-top: 84px;
+      padding-bottom: 95px; } }
   .mainBanner.mainContact .bannerContent .headingBanner:after {
     content: "contact";
     width: 100%;
     text-align: center; }
+  .mainBanner.mainContact .bannerContent .heading-main .ttl-en {
+    padding-right: 29px; }
+    @media (max-width: 767px) {
+      .mainBanner.mainContact .bannerContent .heading-main .ttl-en {
+        padding-right: 0; } }
 
 #entry .contact-description {
   font-size: 18px;
@@ -98,9 +103,20 @@
   letter-spacing: 1px;
   padding-top: 42px;
   padding-bottom: 98px; }
+  @media (max-width: 767px) {
+    #entry .contact-description {
+      padding-top: 30px;
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 39px; } }
   #entry .contact-description .subTitle {
     padding-right: 10px;
     letter-spacing: 1.5px; }
+    @media (max-width: 767px) {
+      #entry .contact-description .subTitle {
+        padding-right: 0; }
+        #entry .contact-description .subTitle .txt {
+          display: none; } }
     #entry .contact-description .subTitle .tel {
       display: inline-block;
       position: relative;
@@ -125,9 +141,39 @@
         width: 100%;
         height: 15px;
         background: #FFF07B;
-        bottom: 0;
+        bottom: 4px;
         right: 0;
         z-index: -1; }
+      @media (max-width: 767px) {
+        #entry .contact-description .subTitle .tel {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 60px;
+          border: 2px solid #CECECE;
+          border-radius: 60px;
+          width: 248px;
+          margin: 24px auto 0;
+          padding-left: 0;
+          font-size: 20px;
+          line-height: 30px;
+          padding-right: 2px;
+          letter-spacing: 0.2px;
+          padding-bottom: 5px; }
+          #entry .contact-description .subTitle .tel:before {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-right: 8px;
+            width: 14px;
+            height: 14px; }
+          #entry .contact-description .subTitle .tel:after {
+            height: 8px;
+            width: 150px;
+            right: unset;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px; } }
 #entry .mod_jobDetailJob .toggleSwitchApply {
   background: #1B7CC4;
   display: flex;
@@ -142,6 +188,12 @@
   position: relative;
   margin-bottom: 0;
   letter-spacing: 2px; }
+  @media (max-width: 767px) {
+    #entry .mod_jobDetailJob .toggleSwitchApply {
+      height: 60px;
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 24px; } }
   #entry .mod_jobDetailJob .toggleSwitchApply:before {
     display: none; }
   #entry .mod_jobDetailJob .toggleSwitchApply.close .btn-toggle:after {
@@ -178,6 +230,17 @@
       transform: rotate(90deg);
       opacity: 0;
       transition: 0.3s; }
+    @media (max-width: 767px) {
+      #entry .mod_jobDetailJob .toggleSwitchApply .btn-toggle {
+        width: 20px;
+        height: 20px;
+        right: 20px; }
+        #entry .mod_jobDetailJob .toggleSwitchApply .btn-toggle:before {
+          width: 7.5px;
+          height: 2.5px; }
+        #entry .mod_jobDetailJob .toggleSwitchApply .btn-toggle:after {
+          height: 7.5px;
+          width: 2.5px; } }
   #entry .mod_jobDetailJob .toggleSwitchApply.text-yellow {
     background: #EBDD2E;
     color: #0D0D0D; }
@@ -200,11 +263,21 @@
   padding: 133px 64px 45px;
   border-radius: 40px;
   margin-top: -69px; }
+  @media (max-width: 767px) {
+    #entry #wrapJobDetail .inner form .body {
+      padding: 62px 16px 55px;
+      border-radius: 20px;
+      margin-top: -30px; } }
 #entry #wrapJobDetail .inner form table {
   background: #F2F2F2 !important;
   padding: 133px 64px 45px;
   border-radius: 40px;
   margin-top: -69px; }
+  @media (max-width: 767px) {
+    #entry #wrapJobDetail .inner form table {
+      padding: 62px 16px 55px;
+      border-radius: 20px;
+      margin-top: -30px; } }
   #entry #wrapJobDetail .inner form table tr {
     background: #F2F2F2 !important;
     display: flex;
@@ -216,13 +289,88 @@
       margin-bottom: 0;
       border-bottom: 0;
       padding-bottom: 0; }
+    #entry #wrapJobDetail .inner form table tr td {
+      width: calc(100% - 228px);
+      padding-left: 80px;
+      column-gap: 57px; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr td {
+          width: 100%;
+          padding: 0;
+          column-gap: 0;
+          flex-wrap: wrap; } }
+      #entry #wrapJobDetail .inner form table tr td .fields {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0; }
+        #entry #wrapJobDetail .inner form table tr td .fields label {
+          width: 53px;
+          padding: 0;
+          min-width: auto;
+          font-size: 18px;
+          line-height: 32px;
+          color: #242424;
+          font-weight: bold; }
+          #entry #wrapJobDetail .inner form table tr td .fields label.text-align {
+            text-align: center; }
+        #entry #wrapJobDetail .inner form table tr td .fields input {
+          width: calc(100% - 53px) !important; }
+          #entry #wrapJobDetail .inner form table tr td .fields input#mailAddress {
+            width: 100% !important; }
+        @media (max-width: 767px) {
+          #entry #wrapJobDetail .inner form table tr td .fields {
+            width: 100%;
+            margin-right: 0 !important;
+            margin-bottom: 16px; }
+            #entry #wrapJobDetail .inner form table tr td .fields:last-child {
+              margin-bottom: 0; }
+            #entry #wrapJobDetail .inner form table tr td .fields label {
+              font-size: 16px;
+              line-height: 24px;
+              width: 48px;
+              text-align: left; }
+              #entry #wrapJobDetail .inner form table tr td .fields label.text-align {
+                text-align: left; }
+            #entry #wrapJobDetail .inner form table tr td .fields input {
+              width: calc(100% - 48px) !important; }
+              #entry #wrapJobDetail .inner form table tr td .fields input#mailAddress {
+                width: 100% !important; } }
+      #entry #wrapJobDetail .inner form table tr td select {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.314' height='11.314' viewBox='0 0 11.314 11.314'%3E%3Cpath id='Union_34' data-name='Union 34' d='M-1411.3-33a1,1,0,0,1-1-1v-4.6h-4.6a1,1,0,0,1-1-1V-40a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v6a1,1,0,0,1-1,1Z' transform='translate(-1020.284 979.272) rotate(135)' fill='%23242424'/%3E%3C/svg%3E%0A");
+        background-size: 12px 12px; }
+      #entry #wrapJobDetail .inner form table tr td label {
+        font-size: 18px;
+        line-height: 32px;
+        color: #242424;
+        font-weight: bold;
+        letter-spacing: 1px; }
+        @media (max-width: 767px) {
+          #entry #wrapJobDetail .inner form table tr td label {
+            font-size: 16px;
+            line-height: 24px; } }
     #entry #wrapJobDetail .inner form table tr.gender td select {
       width: 300px !important; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.gender td select {
+          max-width: 200px; } }
+    @media (max-width: 767px) {
+      #entry #wrapJobDetail .inner form table tr.nameRuby td .fields label {
+        width: 65px; }
+      #entry #wrapJobDetail .inner form table tr.nameRuby td .fields input {
+        width: calc(100% - 65px) !important; } }
     #entry #wrapJobDetail .inner form table tr.address td dt {
       width: 90px;
       min-width: auto; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.address td dt {
+          width: 82px; } }
     #entry #wrapJobDetail .inner form table tr.address td dd {
       width: 300px; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.address td dd {
+          width: calc(100% - 82px); } }
       #entry #wrapJobDetail .inner form table tr.address td dd select, #entry #wrapJobDetail .inner form table tr.address td dd input {
         width: 100% !important; }
     #entry #wrapJobDetail .inner form table tr.address td .fields {
@@ -230,8 +378,16 @@
     #entry #wrapJobDetail .inner form table tr.address td label {
       padding-top: 14px;
       min-width: 100%; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.address td label {
+          font-size: 16px;
+          line-height: 24px;
+          padding-top: 8px; } }
     #entry #wrapJobDetail .inner form table tr.address td .multi-item {
       margin-bottom: 25px; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.address td .multi-item {
+          margin-bottom: 15px; } }
       #entry #wrapJobDetail .inner form table tr.address td .multi-item:last-child {
         margin-bottom: 0; }
       #entry #wrapJobDetail .inner form table tr.address td .multi-item dd {
@@ -239,6 +395,9 @@
     #entry #wrapJobDetail .inner form table tr.address .textBox {
       width: calc(100% - 390px);
       padding-left: 27px; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.address .textBox {
+          display: none; } }
       #entry #wrapJobDetail .inner form table tr.address .textBox i {
         background: #888888;
         margin: 0;
@@ -255,6 +414,9 @@
     #entry #wrapJobDetail .inner form table tr.telNumber td input {
       width: 100% !important;
       max-width: 300px; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.telNumber td input {
+          max-width: 100%; } }
     #entry #wrapJobDetail .inner form table tr.mailAddress td .fields {
       width: 100%; }
     #entry #wrapJobDetail .inner form table tr.mailAddress td input {
@@ -272,6 +434,18 @@
           left: unset;
           right: 0;
           top: 14px; }
+          @media (max-width: 767px) {
+            #entry #wrapJobDetail .inner form table tr th i.required:after {
+              top: -2px; } }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr th {
+          width: 100%;
+          font-size: 18px;
+          line-height: 30px;
+          padding: 0;
+          margin: 0 0 23px;
+          display: flex;
+          align-items: center; } }
     #entry #wrapJobDetail .inner form table tr.birthday td {
       display: flex;
       flex-wrap: wrap;
@@ -285,22 +459,48 @@
           width: 160px !important;
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.314' height='11.314' viewBox='0 0 11.314 11.314'%3E%3Cpath id='Union_34' data-name='Union 34' d='M-1411.3-33a1,1,0,0,1-1-1v-4.6h-4.6a1,1,0,0,1-1-1V-40a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v6a1,1,0,0,1-1,1Z' transform='translate(-1020.284 979.272) rotate(135)' fill='%23242424'/%3E%3C/svg%3E%0A");
           background-size: 12px 12px; }
+        @media (max-width: 767px) {
+          #entry #wrapJobDetail .inner form table tr.birthday td .fields {
+            width: 28.75%;
+            margin-bottom: 0; }
+            #entry #wrapJobDetail .inner form table tr.birthday td .fields:nth-child(1) {
+              width: 42.5%; }
+            #entry #wrapJobDetail .inner form table tr.birthday td .fields label {
+              width: 28px;
+              text-align: center !important; }
+            #entry #wrapJobDetail .inner form table tr.birthday td .fields select {
+              width: calc(100% - 28px) !important; } }
     #entry #wrapJobDetail .inner form table tr.occupation td .multi-item {
       margin-bottom: 24px;
       column-gap: 40px; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.occupation td .multi-item {
+          column-gap: 0;
+          flex-wrap: wrap;
+          margin-bottom: 16px; } }
       #entry #wrapJobDetail .inner form table tr.occupation td .multi-item .fields {
         max-width: 300px; }
+        @media (max-width: 767px) {
+          #entry #wrapJobDetail .inner form table tr.occupation td .multi-item .fields {
+            max-width: 100%; } }
       #entry #wrapJobDetail .inner form table tr.occupation td .multi-item:last-child {
         margin-bottom: 0; }
+      #entry #wrapJobDetail .inner form table tr.occupation td .multi-item select {
+        margin-bottom: 0;
+        width: 100%; }
     #entry #wrapJobDetail .inner form table tr.industry td > div {
       margin-bottom: 24px; }
       #entry #wrapJobDetail .inner form table tr.industry td > div:last-child {
         margin-bottom: 0; }
     #entry #wrapJobDetail .inner form table tr.industry td select {
       max-width: 300px; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.industry td select {
+          max-width: 100%;
+          width: 100%; } }
     #entry #wrapJobDetail .inner form table tr.management-experience td {
       align-items: center;
-      display: flex;
+      display: flex !important;
       flex-wrap: wrap;
       justify-content: flex-start;
       column-gap: 0;
@@ -309,7 +509,22 @@
       #entry #wrapJobDetail .inner form table tr.management-experience td input {
         width: 30px !important;
         height: 30px;
-        margin: 0; }
+        margin: 0;
+        opacity: 1; }
+        @media (max-width: 767px) {
+          #entry #wrapJobDetail .inner form table tr.management-experience td input {
+            width: 24px !important;
+            height: 24px; } }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.management-experience td label {
+          font-size: 16px;
+          line-height: 24px;
+          background: transparent;
+          color: #242424;
+          border: 0;
+          padding: 0;
+          width: 50px;
+          margin-right: 40px; } }
     #entry #wrapJobDetail .inner form table tr.management-number td select {
       max-width: 300px; }
     #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience {
@@ -332,6 +547,9 @@
         width: calc(100% - 148px); }
         #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience .itemInfo .multi-item {
           column-gap: 20px; }
+          @media (max-width: 767px) {
+            #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience .itemInfo .multi-item {
+              column-gap: 0; } }
         #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience .itemInfo .fields {
           width: 213px;
           display: flex; }
@@ -342,42 +560,41 @@
             text-align: center; }
         #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience .itemInfo #employmentStatusA {
           max-width: 300px; }
+      @media (max-width: 767px) {
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience .item-title {
+          width: 82px;
+          display: flex;
+          align-items: center; }
+          #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience .item-title label {
+            padding: 0;
+            text-align: left; }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience .itemInfo {
+          width: calc(100% - 82px); }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(1) .item-title {
+          width: 65px; }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(1) .itemInfo {
+          width: calc(100% - 65px); }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(2) .itemInfo .fields:nth-child(1), #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(3) .itemInfo .fields:nth-child(1) {
+          width: 60%;
+          margin-bottom: 0; }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(2) .itemInfo .fields:nth-child(2), #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(3) .itemInfo .fields:nth-child(2) {
+          width: 40%; }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(2) .itemInfo label, #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(3) .itemInfo label {
+          width: 30px; }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(2) .itemInfo select, #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:nth-child(3) .itemInfo select {
+          width: calc(100% - 30px) !important; }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:last-child .item-title {
+          width: 100%;
+          margin-bottom: 16px; }
+        #entry #wrapJobDetail .inner form table tr.workExperience .item-workExperience:last-child .itemInfo {
+          width: 100%; } }
     #entry #wrapJobDetail .inner form table tr.workExperience .note-textarea {
       margin-top: 18px; }
     #entry #wrapJobDetail .inner form table tr.workExperience .workExperienceBody .open {
       border-bottom: 0; }
-    #entry #wrapJobDetail .inner form table tr td {
-      width: calc(100% - 228px);
-      padding-left: 80px;
-      column-gap: 57px; }
-      #entry #wrapJobDetail .inner form table tr td .fields {
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0; }
-        #entry #wrapJobDetail .inner form table tr td .fields label {
-          width: 53px;
-          padding: 0;
-          min-width: auto;
-          font-size: 18px;
-          line-height: 32px;
-          color: #242424;
-          font-weight: bold; }
-          #entry #wrapJobDetail .inner form table tr td .fields label.text-align {
-            text-align: center; }
-        #entry #wrapJobDetail .inner form table tr td .fields input {
-          width: calc(100% - 53px) !important; }
-          #entry #wrapJobDetail .inner form table tr td .fields input#mailAddress {
-            width: 100% !important; }
-      #entry #wrapJobDetail .inner form table tr td select {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.314' height='11.314' viewBox='0 0 11.314 11.314'%3E%3Cpath id='Union_34' data-name='Union 34' d='M-1411.3-33a1,1,0,0,1-1-1v-4.6h-4.6a1,1,0,0,1-1-1V-40a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v6a1,1,0,0,1-1,1Z' transform='translate(-1020.284 979.272) rotate(135)' fill='%23242424'/%3E%3C/svg%3E%0A");
-        background-size: 12px 12px; }
-      #entry #wrapJobDetail .inner form table tr td label {
-        font-size: 18px;
-        line-height: 32px;
-        color: #242424;
-        font-weight: bold;
-        letter-spacing: 1px; }
+
+#entryConfirm .mainBanner .inner {
+  background: transparent;
+  padding-top: 0; }
 
 /*# sourceMappingURL=page_contact.css.map */

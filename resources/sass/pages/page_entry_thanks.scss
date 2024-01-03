@@ -10,9 +10,9 @@
   @import "resources/sass/styles/formThanks"; //apply,concier用の汎用完了フォームスタイル
 
   #entryArea {
-    margin: 100px 0 80px;
+    margin: 0px 0 120px;
     @include xs {
-      margin: 35px 0 30px;
+      margin: 0px 0 80px;
     }
   }
 
@@ -92,16 +92,17 @@
       max-width: $defInnerWidthPc;
       margin: 0 auto;
       padding-left: 50px;
-      color: $accentColor;
+      color: #0D0D0D;
       font-size: rem(18);
       line-height: 1.5;
+        font-weight: bold;
       @include xs {
         max-width: 100%;
         width: calc(100% - 24px);
         padding-left: 20px;
       }
       &::before, &::after {
-        content: "";
+        //content: "";
         position: absolute;
         left: 0;
         display: inline-block;
