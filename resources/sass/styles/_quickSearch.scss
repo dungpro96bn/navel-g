@@ -153,7 +153,7 @@ searchQuick　クイックサーチ
                     border: solid 2px $searchSubmitBtnBorderColor;
 
                     &:hover {
-                        opacity: .7;
+                        background: #0D0D0D;
                     }
 
                     @include xs {
