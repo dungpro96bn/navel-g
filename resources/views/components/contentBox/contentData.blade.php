@@ -37,7 +37,7 @@
                 <div class="businessPointInfo">
                     <picture class="image">
                         <source srcset="{{asset('images/contentBox/business/top_business_img01_pc.png')}}">
-                        <img src="{{asset('images/contentBox/business/top_business_img01_pc.png')}}" alt="">
+                        <img src="{{asset('images/contentBox/business/top_business_img01_pc.png')}}" alt="走る男女　イラスト">
                     </picture>
                     <div class="ttlInfo">
                         <p class="ttl">あなた専任の担当者が<br/>二人三脚で就業をフォロー！</p>
@@ -49,7 +49,7 @@
                 <div class="businessPointInfo">
                     <picture class="image">
                         <source srcset="{{asset('images/contentBox/business/top_business_img02_pc.png')}}">
-                        <img src="{{asset('images/contentBox/business/top_business_img02_pc.png')}}" alt="">
+                        <img src="{{asset('images/contentBox/business/top_business_img02_pc.png')}}" alt="収入・地域・職種・働き方　イラスト">
                     </picture>
                     <div class="ttlInfo">
                         <p class="ttl">希望を叶えるマッチングで<br/>あなたに合ったお仕事をご紹介！</p>
@@ -64,42 +64,42 @@
                         <div class="subBusinessItem">
                             <picture class="icon">
                                 <source srcset="{{asset('images/contentBox/business/top_business_icon01_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/top_business_icon01_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/top_business_icon01_pc.png')}}" alt="企画・管理・事務　イラスト">
                             </picture>
                             <p class="subTtl">企画・管理・事務</p>
                         </div>
                         <div class="subBusinessItem">
                             <picture class="icon">
                                 <source srcset="{{asset('images/contentBox/business/top_business_icon02_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/top_business_icon02_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/top_business_icon02_pc.png')}}" alt="販売・飲食・サービス　イラスト">
                             </picture>
                             <p class="subTtl">販売・飲食・サービス</p>
                         </div>
                         <div class="subBusinessItem">
                             <picture class="icon">
                                 <source srcset="{{asset('images/contentBox/business/top_business_icon03_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/top_business_icon03_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/top_business_icon03_pc.png')}}" alt="建築・土木・警備・清掃　イラスト">
                             </picture>
                             <p class="subTtl">建築・土木・警備・清掃</p>
                         </div>
                         <div class="subBusinessItem">
                             <picture class="icon">
                                 <source srcset="{{asset('images/contentBox/business/top_business_icon04_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/top_business_icon04_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/top_business_icon04_pc.png')}}" alt="製造・技術（電気・電子・機械）　イラスト">
                             </picture>
                             <p class="subTtl">製造・技術<br/>（電気・電子・機械）</p>
                         </div>
                         <div class="subBusinessItem">
                             <picture class="icon">
                                 <source srcset="{{asset('images/contentBox/business/top_business_icon05_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/top_business_icon05_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/top_business_icon05_pc.png')}}" alt="製造・技術（化学・医療・食品）イラスト">
                             </picture>
                             <p class="subTtl">製造・技術<br/>（化学・医療・食品）</p>
                         </div>
                         <div class="subBusinessItem">
                             <picture class="icon">
                                 <source srcset="{{asset('images/contentBox/business/top_business_icon06_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/top_business_icon06_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/top_business_icon06_pc.png')}}" alt="物流・配送・軽作業　イラスト">
                             </picture>
                             <p class="subTtl">物流・配送・軽作業</p>
                         </div>
@@ -109,7 +109,7 @@
                         <picture class="icon">
                             <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/top_business_icon07_sp.png')}} 2x">
                             <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/top_business_icon07_pc.png')}} 2x">
-                            <img src="{{asset('images/contentBox/business/top_business_icon07_pc.png')}}" alt="">
+                            <img src="{{asset('images/contentBox/business/top_business_icon07_pc.png')}}" alt="女性スタッフ　イラスト">
                         </picture>
                     </div>
                 </div>

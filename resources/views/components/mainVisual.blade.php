@@ -11,7 +11,7 @@ $sliderImgList = array(
         'top_img_main_03_sp.png',
     ),
 );
-$mvCatchCopy = '';//メインビジュアルのキャッチコピーを「''」内に入力してください
+
 ?>
 
 @if(($sliderImgList['pc'] && count($sliderImgList['pc']) > 0) || ($sliderImgList['sp'] && count($sliderImgList['sp']) > 0))
@@ -34,7 +34,20 @@ $mvCatchCopy = '';//メインビジュアルのキャッチコピーを「''」�
             <?php elseif(count($imgListPc) > 1): ?>
             <div class="mvMultiple js-mvSlider">
                 <div class="swiper-wrapper">
-                    <?php foreach($imgListPc as $key => $imgName): ?>
+                    <?php
+                    $num = 1;
+                    foreach($imgListPc as $key => $imgName): ?>
+
+                    <?php
+                    $number = $num++;
+                    if($number == 1){
+                        $mvCatchCopy = 'いろいろな職種のイメージ';
+                    } elseif ($number == 2){
+                        $mvCatchCopy = '手を挙げてジャンプする三人';
+                    } elseif ($number == 3){
+                        $mvCatchCopy = '笑顔でスーツを着た女性社員';
+                    }
+                    ?>
                     <div class="swiper-slide">
                         <picture>
                             <source media="(max-width: 767px)" srcset="{{asset('images/mvSlider/'. $imgListSp[$key])}} 2x">

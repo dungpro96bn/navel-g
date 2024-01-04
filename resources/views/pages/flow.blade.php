@@ -17,7 +17,7 @@
                             <picture class="item_person_icon icon-person02">
                                 <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/flow/flow_banner_icon01_sp.png')}} 2x">
                                 <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/flow/flow_banner_icon01_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/flow/flow_banner_icon01_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/flow/flow_banner_icon01_pc.png')}}" alt="手を挙げてジャンプする女性　イラスト">
                             </picture>
                         </div>
                         <div class="headingBanner">

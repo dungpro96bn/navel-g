@@ -17,12 +17,12 @@
                             <picture class="item_person_icon icon-person01">
                                 <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_banner_icon01_sp.png')}} 2x">
                                 <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_banner_icon01_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/business_banner_icon01_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/business_banner_icon01_pc.png')}}" alt="手を挙げてジャンプする男性　イラスト">
                             </picture>
                             <picture class="item_person_icon icon-person02">
                                 <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_banner_icon02_sp.png')}} 2x">
                                 <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_banner_icon02_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/business_banner_icon02_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/business_banner_icon02_pc.png')}}" alt="手を挙げてジャンプする女性　イラスト">
                             </picture>
                         </div>
                         <div class="headingBanner">
@@ -130,7 +130,7 @@
                     <picture class="business-working-bg bg06">
                         <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_bg_icon06_sp.png')}} 2x">
                         <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_bg_icon06_pc.png')}} 2x">
-                        <img src="{{asset('images/contentBox/business/business_bg_icon06_pc.png')}}" alt="">
+                        <img src="{{asset('images/contentBox/business/business_bg_icon06_pc.png')}}" alt="手を挙げてジャンプする女性　イラスト">
                     </picture>
                     <div class="header-entry">
                         <picture class="icon" data-aos="fade-up">
@@ -157,7 +157,7 @@
                                 <picture class="image">
                                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image01_sp.png')}}">
                                     <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image01_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image01_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image01_pc.png')}}" alt="走る男女　イラスト">
                                 </picture>
                             </div>
                         </div>
@@ -174,7 +174,7 @@
                                 <picture class="image">
                                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image02_sp.png')}}">
                                     <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image02_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image02_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image02_pc.png')}}" alt="収入・地域・職種・働き方　イラスト">
                                 </picture>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                                 <picture class="image">
                                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image03_sp.png')}}">
                                     <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image03_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image03_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image03_pc.png')}}" alt="働いているスタッフたち">
                                 </picture>
                             </div>
                         </div>
@@ -235,7 +235,7 @@
                     <picture class="beginner-guide-bg bg02">
                         <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_beginner_guide_bg_icon02_sp.png')}} 2x">
                         <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_beginner_guide_bg_icon02_pc.png')}} 2x">
-                        <img src="{{asset('images/contentBox/business/business_beginner_guide_bg_icon02_pc.png')}}" alt="">
+                        <img src="{{asset('images/contentBox/business/business_beginner_guide_bg_icon02_pc.png')}}" alt="手を挙げてジャンプする男性　イラスト">
                     </picture>
                     <div class="header-entry">
                         <picture class="icon" data-aos="fade-up">
@@ -261,7 +261,7 @@
                             <div class="imageContent" data-aos="fade-up">
                                 <picture class="image">
                                     <source srcset="{{asset('images/contentBox/business/business_image04_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image04_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image04_pc.png')}}" alt="派遣スタッフについての図">
                                 </picture>
                             </div>
                         </div>
@@ -282,7 +282,7 @@
                                         <picture class="image">
                                             <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image05_sp.png')}}">
                                             <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image05_pc.png')}}">
-                                            <img src="{{asset('images/contentBox/business/business_image05_pc.png')}}" alt="">
+                                            <img src="{{asset('images/contentBox/business/business_image05_pc.png')}}" alt="相談している二人女性">
                                         </picture>
                                         <div class="infoItem">
                                             <h4 class="ttl">
@@ -296,7 +296,7 @@
                                         <picture class="image">
                                             <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image06_sp.png')}}">
                                             <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image06_pc.png')}}">
-                                            <img src="{{asset('images/contentBox/business/business_image06_pc.png')}}" alt="">
+                                            <img src="{{asset('images/contentBox/business/business_image06_pc.png')}}" alt="笑顔でスーツを着た男女スタッフ">
                                         </picture>
                                         <div class="infoItem">
                                             <h4 class="ttl">
@@ -310,7 +310,7 @@
                                         <picture class="image">
                                             <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image07_sp.png')}}">
                                             <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image07_pc.png')}}">
-                                            <img src="{{asset('images/contentBox/business/business_image07_pc.png')}}" alt="">
+                                            <img src="{{asset('images/contentBox/business/business_image07_pc.png')}}" alt="幸せか3人家族">
                                         </picture>
                                         <div class="infoItem">
                                             <h4 class="ttl">
@@ -357,7 +357,7 @@
                                 <picture class="image">
                                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image08_sp.png')}} 2x">
                                     <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image08_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image08_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image08_pc.png')}}" alt="ネット上で仕事を登録する男性　イラスト">
                                 </picture>
                                 <p class="text">まず、派遣会社へ登録していただきます。<br/>（この時点では雇用契約は締結しておりません）</p>
                             </li>
@@ -366,7 +366,7 @@
                                 <picture class="image">
                                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image09_sp.png')}} 2x">
                                     <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image09_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image09_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image09_pc.png')}}" alt="コンサルタント女性　イラスト">
                                 </picture>
                                 <p class="text">その後、派遣会社から派遣先を<br class="pc-br"/>紹介されますので、就業する・しないを選択して下さい。</p>
                             </li>
@@ -375,7 +375,7 @@
                                 <picture class="image">
                                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image10_sp.png')}} 2x">
                                     <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image10_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image10_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image10_pc.png')}}" alt="OKサイン女性やLikeサイン男性　イラスト">
                                 </picture>
                                 <p class="text">就業することが決まったのちに雇用契約を締結し、派遣先で就業していただきます。</p>
                             </li>
@@ -387,7 +387,7 @@
                             <picture class="icon">
                                 <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_icon03_sp.png')}} 2x">
                                 <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_icon03_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/business_icon03_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/business_icon03_pc.png')}}" alt="女性スタッフ　イラスト">
                             </picture>
                             <div class="workingCheck-box">
                                 <p class="title">紹介予定派遣について</p>
@@ -399,7 +399,7 @@
                                 <picture class="imageItem">
 {{--                                    <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image11_sp.png')}}">--}}
                                     <source srcset="{{asset('images/contentBox/business/business_image11_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image11_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image11_pc.png')}}" alt="紹介予定派遣についての図">
                                 </picture>
                             </div>
                         </div>
@@ -407,7 +407,7 @@
                             <picture class="icon">
                                 <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_icon04_sp.png')}} 2x">
                                 <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_icon04_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/business_icon04_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/business_icon04_pc.png')}}" alt="男性スタッフ　イラスト">
                             </picture>
                             <div class="workingCheck-box">
                                 <p class="title">有料職業紹介について</p>
@@ -424,7 +424,7 @@
                                 <picture class="imageItem">
 {{--                                    <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image12_sp.png')}}">--}}
                                     <source srcset="{{asset('images/contentBox/business/business_image12_pc.png')}}">
-                                    <img src="{{asset('images/contentBox/business/business_image12_pc.png')}}" alt="">
+                                    <img src="{{asset('images/contentBox/business/business_image12_pc.png')}}" alt="有料職業紹介についての図">
                                 </picture>
                             </div>
                         </div>
@@ -438,7 +438,7 @@
                 <picture class="solution-staff-bg bg01">
                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_solution_staff_bg_icon01_sp.png')}} 2x">
                     <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_solution_staff_bg_icon01_pc.png')}} 2x">
-                    <img src="{{asset('images/contentBox/business/business_solution_staff_bg_icon01_pc.png')}}" alt="">
+                    <img src="{{asset('images/contentBox/business/business_solution_staff_bg_icon01_pc.png')}}" alt="手を挙げてジャンプする女性　イラスト">
                 </picture>
                 <picture class="solution-staff-bg bg02">
                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_solution_staff_bg_icon02_sp.png')}} 2x">
@@ -482,7 +482,7 @@
                         <div class="solutionStaff-image" data-aos="fade-up">
                             <picture class="imageItem">
                                 <source srcset="{{asset('images/contentBox/business/business_image13_pc.png')}} 2x">
-                                <img src="{{asset('images/contentBox/business/business_image13_pc.png')}}" alt="">
+                                <img src="{{asset('images/contentBox/business/business_image13_pc.png')}}" alt="コンサルタント女性　イラスト">
                             </picture>
                         </div>
                     </div>

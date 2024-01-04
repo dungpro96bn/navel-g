@@ -16,7 +16,7 @@
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/flow/top_flow_faq_img01_sp.png')}}">
                         <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/flow/top_flow_faq_img01_pc.png')}}">
-                        <img src="{{asset('images/contentBox/flow/top_flow_faq_img01_pc.png')}}" alt="">
+                        <img src="{{asset('images/contentBox/flow/top_flow_faq_img01_pc.png')}}" alt="ラップトップを使って入力する">
                     </picture>
                     <p class="text">ご登録から就業までの流れをご紹介します。<br/>内定までの期間や必要な物等、ご紹介いたします。</p>
                 </div>
@@ -28,7 +28,7 @@
                     <picture class="image">
                         <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/flow/top_flow_faq_img02_sp.png')}}">
                         <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/flow/top_flow_faq_img02_pc.png')}}">
-                        <img src="{{asset('images/contentBox/flow/top_flow_faq_img02_pc.png')}}" alt="">
+                        <img src="{{asset('images/contentBox/flow/top_flow_faq_img02_pc.png')}}" alt="FAQサイコロ">
                     </picture>
                     <p class="text">登録前や就業後などお仕事をする上で皆さんがご不安に思われる点を、「よくある質問」としてまとめました。</p>
                 </div>

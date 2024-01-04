@@ -1879,6 +1879,7 @@
         left: 50%;
         transform: translateX(-50%);
         pointer-events: none;
+        z-index: 2;
 
         @include xs{
             font-size: 110px;
@@ -1910,7 +1911,7 @@
 
     .inner {
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
 
     .icon-person01 {

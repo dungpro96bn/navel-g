@@ -1433,7 +1433,8 @@
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    pointer-events: none; }
+    pointer-events: none;
+    z-index: 2; }
     @media (max-width: 767px) {
       #entry-home:before {
         font-size: 110px;
@@ -1458,7 +1459,7 @@
         background-size: 100%; } }
   #entry-home .inner {
     position: relative;
-    z-index: 2; }
+    z-index: 3; }
   #entry-home .icon-person01 {
     position: absolute;
     left: -27px;

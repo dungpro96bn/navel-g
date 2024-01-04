@@ -4,7 +4,7 @@
         <picture class="icon_btn_call">
             <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/entry/top_entry_icon03_sp.png')}} 2x">
             <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/entry/top_entry_icon03_pc.png')}} 2x">
-            <img src="{{asset('images/contentBox/entry/top_entry_icon03_pc.png')}}" alt="">
+            <img src="{{asset('images/contentBox/entry/top_entry_icon03_pc.png')}}" alt="仕事相談会　イラスト">
         </picture>
 
         <div class="header-banner">
