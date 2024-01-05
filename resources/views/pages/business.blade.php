@@ -310,7 +310,7 @@
                                         <picture class="image">
                                             <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/business/business_image07_sp.png')}}">
                                             <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/business/business_image07_pc.png')}}">
-                                            <img src="{{asset('images/contentBox/business/business_image07_pc.png')}}" alt="幸せか3人家族">
+                                            <img src="{{asset('images/contentBox/business/business_image07_pc.png')}}" alt="幸せな3人家族">
                                         </picture>
                                         <div class="infoItem">
                                             <h4 class="ttl">
