@@ -880,3 +880,71 @@
     }
 }
 
+#apply{
+    #applyForm{
+        .inner{
+            padding: 0;
+        }
+
+        .form01{
+            select{
+                background-image: url("/public/images/arrow/ico_link_arrow_down.png");
+                background-repeat: no-repeat;
+                background-position: center right;
+                padding: 5px 32px 5px 5px;
+                background-size: 25px 36px;
+
+                @include xs{
+                    padding: 5px 35px 5px 5px;
+                    background-color: rgba(169, 166, 188, 0.15);
+                    height: 34px;
+                    border-radius: 0;
+                    box-shadow: none;
+                    border: 1px solid #BBBBBB;
+                    font-size: 1rem;
+                    clear: both;
+                    display: block;
+                    float: left;
+                    width: 100%;
+                }
+            }
+            textarea{
+                position: relative;
+                background: white;
+                outline: 0 none black;
+                padding: 10px;
+                color: #666666;
+                width: 100%;
+                height: 10rem;
+                border: 1px solid #d9d9d9;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                display: block;
+                resize: vertical;
+                border-radius: 0;
+            }
+
+            .note-textarea{
+                font-size: 80%;
+            }
+
+            @include xs{
+                aside[class$=Btns] .rule_kojin_field .sty_checkbox .checkbox-label.agree{
+                    left: unset;
+                }
+
+                input{
+                    background: rgba(169, 166, 188, 0.15);
+                    height: 34px;
+                    border-radius: 0;
+                    box-shadow: none;
+                    border: 1px solid #BBBBBB;
+                    font-size: 1rem;
+                    clear: both;
+                }
+            }
+
+        }
+    }
+
+}
