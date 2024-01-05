@@ -888,6 +888,19 @@
         }
 
         .form01{
+
+            p.open{
+                background-image: url("/public/images/arrow/bg_mod_apply_h1_arrowDown.png");
+                background-repeat: no-repeat;
+                background-position: 10px center;
+            }
+
+            p.close{
+                background-image: url("/public/images/arrow/bg_mod_apply_h1_arrowRight.png");
+                background-repeat: no-repeat;
+                background-position: 10px center;
+            }
+
             select{
                 background-image: url("/public/images/arrow/ico_link_arrow_down.png");
                 background-repeat: no-repeat;
