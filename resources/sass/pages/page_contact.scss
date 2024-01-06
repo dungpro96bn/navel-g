@@ -62,6 +62,120 @@
 
 #entry{
 
+    #entryForm{
+        .form01{
+            p.open{
+                background-image: unset;
+            }
+
+            p.close{
+                background-image: unset;
+            }
+
+            section{
+                margin-bottom: 80px;
+
+                &.free-entry-field{
+                    margin-bottom: 48px;
+                }
+
+                @include xs{
+                    margin-bottom: 40px;
+                }
+            }
+
+            input{
+                background: #fff;
+            }
+
+            select{
+                background-color: #fff;
+            }
+
+            textarea{
+                position: relative;
+                background: #fff;
+                height: 300px;
+                border-radius: 8px;
+                border: 0;
+                padding: 24px;
+                font-size: 14px;
+                line-height: 32px;
+                color: #242424;
+                font-weight: 400;
+                width: 100%;
+                letter-spacing: 1px;
+            }
+
+            .note-textarea{
+                font-size: 16px;
+                line-height: 24px;
+                display: block;
+                margin-top: 26px;
+                letter-spacing: 1px;
+            }
+
+            aside[class$=Btns]{
+                .rule_kojin_field{
+                    .sty_checkbox{
+                        .checkbox-label.agree{
+                            &:before{
+                                content: "";
+                                display: inline-block;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: -40px;
+                                width: 24px;
+                                height: 24px;
+                                margin: auto;
+                                border-radius: 4px;
+                                background: #fff;
+                                border: 1px solid #0D0D0D;
+
+                                @include xs{
+                                    top: 20px;
+                                }
+                            }
+
+                            &:after{
+                                content: "";
+                                display: inline-block;
+                                position: absolute;
+                                top: -4px;
+                                bottom: 0;
+                                left: -35px;
+                                width: 14px;
+                                height: 8px;
+                                margin: auto;
+                                transform: rotate(-45deg) scale(.5);
+                                border-bottom: 3px solid #fff;
+                                border-left: 3px solid #fff;
+                                opacity: 0;
+
+                                @include xs{
+                                    top: 15px;
+                                }
+                            }
+
+                            &.is-checked{
+                                &:after{
+                                    transform: rotate(-45deg) scale(1);
+                                    opacity: 1;
+                                }
+
+                                &:before{
+                                    background: #0D0D0D!important;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
     .contact-description{
         font-size: 18px;
         line-height: 32px;
@@ -329,6 +443,9 @@
                             width: calc(100% - 228px);
                             padding-left: 80px;
                             column-gap: 57px;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-right: 0;
 
                             @include xs{
                                 width: 100%;
@@ -343,6 +460,11 @@
                                 flex-wrap: wrap;
                                 align-items: center;
                                 padding: 0;
+                                margin-bottom: 0px;
+
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
 
                                 label{
                                     width: 53px;
@@ -559,6 +681,7 @@
                             font-size: 18px;
                             line-height: 32px;
                             letter-spacing: 1px;
+                            padding-bottom: 0;
 
                             i.required{
                                 position: static;
