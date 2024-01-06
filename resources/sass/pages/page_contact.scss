@@ -105,6 +105,10 @@
                 font-weight: 400;
                 width: 100%;
                 letter-spacing: 1px;
+
+                @include xs{
+                    padding: 15px;
+                }
             }
 
             .note-textarea{
