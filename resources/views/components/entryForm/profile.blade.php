@@ -280,7 +280,7 @@ if($fEntApplyMasters->cityMst){
                     @case('mailAddress')
                     <div class="fields">
                         <x-molecules.input type="email" name="mailAddress" id="mailAddress" class="email01" :value="old('mailAddress', $fEntUserApplyInfo->mailAddress ?? '')" placeholder="" />
-                        <x-molecules.validation-errors :errors="$errors" for="mailAddress" />
+{{--                        <x-molecules.validation-errors :errors="$errors" for="mailAddress" />--}}
                     </div>
                     @break
 
