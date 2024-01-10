@@ -24,7 +24,7 @@
             </a>
         </div>
         <div class="contactRight">
-            <a href="#" class="registration-form">
+            <a href="entry/" class="registration-form">
                 <picture class="icon">
                     <source media="(max-width: 767px)" srcset="{{asset('images/contentBox/registration_form_icon01_sp.png')}} 2x">
                     <source media="(min-width: 768px)" srcset="{{asset('images/contentBox/registration_form_icon01_pc.png')}} 2x">
