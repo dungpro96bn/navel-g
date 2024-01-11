@@ -47,7 +47,7 @@
 
         <div class="link-page" data-aos="fade-up">
             <div class="btn-link">
-                <a href="/entry/">登録フォーム</a>
+                <a href="<?php echo Route('top');?>/entry/">登録フォーム</a>
             </div>
         </div>
 

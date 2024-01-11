@@ -15,10 +15,10 @@
 
     }
 @endphp
-<div id="favLinkBtn" class="favLinkBtn goApply favoriteBtn">
-    <a class="favLink js-favLink {{ $checked ? 'favo' : 'add' }}" data-jmc="{{$code}}" onclick="gtag('event', 'click', {'event_category': 'links','event_label': '{{ $checked ? 'del' : 'add' }}-favorite-{{$jobId}}{{$device ? '-'.$device : ''}}'})">
+{{--<div id="favLinkBtn" class="favLinkBtn goApply favoriteBtn">--}}
+{{--    <a class="favLink js-favLink {{ $checked ? 'favo' : 'add' }}" data-jmc="{{$code}}" onclick="gtag('event', 'click', {'event_category': 'links','event_label': '{{ $checked ? 'del' : 'add' }}-favorite-{{$jobId}}{{$device ? '-'.$device : ''}}'})">--}}
 {{--        {!! file_get_contents(public_path('images/common/favoriteIcon.svg')) !!}--}}
-        {!! file_get_contents(public_path('images/common/favoriteJobIcon.svg')) !!}
-        <div class="favLabel"></div>
-    </a>
-</div>
+{{--        {!! file_get_contents(public_path('images/common/favoriteJobIcon.svg')) !!}--}}
+{{--        <div class="favLabel"></div>--}}
+{{--    </a>--}}
+{{--</div>--}}

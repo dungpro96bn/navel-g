@@ -25,7 +25,11 @@ $text = $navItem['text'] ?? '';
     @if($text || $linkUrl)
     <span class="letter {{$target}}">
         {{$text}}
-        <a href="{{$linkUrl}}"></a>
+        @if($text == "事業紹介")
+            <a href="<?php echo Route('top');?>/business/"></a>
+        @else
+            <a href="{{$linkUrl}}"></a>
+        @endif
     </span>
     @endif
 </li>

@@ -56,7 +56,7 @@
                 <div class="inner">
                     <div class="flow_titleBox">
                         <div class="ttlBox"><p class="ttl">派遣社員の入社（就<br class="sp-br"/>業）までの流れ</p></div>
-                        <p class="subTitle">ご面談時即日でお仕事決定も！お急ぎの場合は、まずはお電話ください。<span class="tel">0120-622-468</span></p>
+                        <p class="subTitle">ご面談時即日でお仕事決定も！お急ぎの場合は、まずはお電話ください。<a href="tel:0120622468" class="tel">0120-622-468</a></p>
                     </div>
                     <div class="flowStep-content">
                         <ul class="stepList">
@@ -104,7 +104,7 @@
                                 <div class="stepInfo">
                                     <div class="textInfo">
                                         <p class="title txt-orange">面接</p>
-                                        <p class="text">専任の担当者があなたのご希望やスキル等をお伺いして、あなたに合ったお仕事をお探しします。<br/>担当者がご提案したお仕事の中であなたが「やってみたい！」と思うお仕事があれば応募に進みます。</p>
+                                        <p class="text">面接はWEB面接や対面面接などあなたのご都合に合わせられるようしっかりサポートさせていただきます！ <br/>面接日の調整や面接対策まで専任の担当者がフォローするのでご安心ください。</p>
                                     </div>
                                 </div>
                             </li>

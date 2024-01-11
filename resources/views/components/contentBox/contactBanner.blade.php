@@ -30,8 +30,9 @@
                 <p class="text">0120-622-468</p>
             </a>
         </div>
+
         <div class="searchContact">
-            <a href="#">
+            <a href="<?php echo Route('top');?>/search/">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                         <defs>
