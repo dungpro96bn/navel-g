@@ -40,7 +40,7 @@ if($fEntApplyMasters->cityMst){
                     @case('lastName')
                     <div class="fields name">
                         <label for="lastName" class="text-align">姓</label>
-                        <x-molecules.input autofocus type="text" name="lastName" id="lastName" :value="old('lastName', $fEntUserApplyInfo->nameSei ?? '')" maxlength="16" placeholder="" />
+                        <x-molecules.input type="text" name="lastName" id="lastName" :value="old('lastName', $fEntUserApplyInfo->nameSei ?? '')" maxlength="16" placeholder="" />
                         <x-molecules.validation-errors :errors="$errors" for="lastName" />
                     </div>
                     @break
